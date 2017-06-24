@@ -274,3 +274,5 @@ proj.win32/Release.*/
 lib/
 
 # others
+
+publish/
