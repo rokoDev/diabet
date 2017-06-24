@@ -1,3 +1,6 @@
 [submodule "cocos2d"]
 	path = cocos2d
 	url = https://github.com/newnon/cocos2d-x
+[submodule "Resources/DiabetRes.spritebuilder"]
+	path = Resources/DiabetRes.spritebuilder
+	url = https://github.com/rokoDev/diabetRes.git
