@@ -97,3 +97,8 @@ void AppDelegate::applicationWillEnterForeground() {
     // if you use SimpleAudioEngine, it must resume here
     // SimpleAudioEngine::getInstance()->resumeBackgroundMusic();
 }
+
+void AppDelegate::applicationScreenSizeChanged(int newWidth, int newHeight)
+{
+    CCLOG("AppDelegate::applicationScreenSizeChanged(%i, %i)", newWidth, newHeight);
+}
