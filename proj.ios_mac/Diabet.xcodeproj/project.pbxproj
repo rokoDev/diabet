@@ -62,6 +62,22 @@
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
 		FF6EBDA41EFE8BDB000F18A3 /* publish in Resources */ = {isa = PBXBuildFile; fileRef = FF6EBDA31EFE8BDB000F18A3 /* publish */; };
 		FF6EBDA51EFE8BDB000F18A3 /* publish in Resources */ = {isa = PBXBuildFile; fileRef = FF6EBDA31EFE8BDB000F18A3 /* publish */; };
+		FF6EBE1A1F0078AF000F18A3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF6EBE191F0078AF000F18A3 /* main.cpp */; };
+		FF6EBE201F0079DC000F18A3 /* SimpleTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF6EBE1E1F0079DC000F18A3 /* SimpleTest.cpp */; };
+		FF6EBE231F007A5B000F18A3 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6EBE081F007885000F18A3 /* libgtest.a */; };
+		FF6EBE271F007AAA000F18A3 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6EBE261F007AAA000F18A3 /* libiconv.tbd */; };
+		FF6EBE281F007AB1000F18A3 /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAF9180E9839004C840B /* libcocos2d Mac.a */; };
+		FF6EBE2A1F007ABD000F18A3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6EBE291F007ABD000F18A3 /* libz.tbd */; };
+		FF6EBE2B1F007AC6000F18A3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8262943D1AAF051F00CB7CF7 /* Security.framework */; };
+		FF6EBE2C1F007ACC000F18A3 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 503AE11A17EB9C5A00D1A890 /* IOKit.framework */; };
+		FF6EBE2D1F007AD6000F18A3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5087E78A17EB975400C73F5D /* OpenGL.framework */; };
+		FF6EBE2E1F007ADB000F18A3 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5087E78817EB974C00C73F5D /* AppKit.framework */; };
+		FF6EBE2F1F007AE4000F18A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		FF6EBE301F007AE9000F18A3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1C47EA1293683800B63C5D /* QuartzCore.framework */; };
+		FF6EBE311F007AF8000F18A3 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620B132DFF330009C878 /* OpenAL.framework */; };
+		FF6EBE321F007AFF000F18A3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
+		FF6EBE331F007B08000F18A3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
+		FF6EBE341F007C02000F18A3 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +109,69 @@
 			remoteGlobalIDString = A07A4C241783777C0073F6A7;
 			remoteInfo = "cocos2dx iOS";
 		};
+		FF6EBE051F007885000F18A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF6EBDF81F007885000F18A3 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4539C8FF0EC27F6400A70F4C;
+			remoteInfo = "gtest-framework";
+		};
+		FF6EBE071F007885000F18A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF6EBDF81F007885000F18A3 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C848FA101A209C0083642A;
+			remoteInfo = "gtest-static";
+		};
+		FF6EBE091F007885000F18A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF6EBDF81F007885000F18A3 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C8490B101A217E0083642A;
+			remoteInfo = "gtest_main-static";
+		};
+		FF6EBE0B1F007885000F18A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF6EBDF81F007885000F18A3 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40899F430FFA7184000B29AE;
+			remoteInfo = "gtest_unittest-framework";
+		};
+		FF6EBE0D1F007885000F18A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF6EBDF81F007885000F18A3 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C84987101A36850083642A;
+			remoteInfo = "gtest_unittest-static";
+		};
+		FF6EBE0F1F007885000F18A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF6EBDF81F007885000F18A3 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4089A0130FFACEFC000B29AE;
+			remoteInfo = "sample1_unittest-framework";
+		};
+		FF6EBE111F007885000F18A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF6EBDF81F007885000F18A3 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C84997101A36A60083642A;
+			remoteInfo = "sample1_unittest-static";
+		};
+		FF6EBE211F007A4B000F18A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF6EBDF81F007885000F18A3 /* gtest.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 40C848F9101A209C0083642A;
+			remoteInfo = "gtest-static";
+		};
+		FF6EBE241F007A7F000F18A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1551A33E158F2AB200E66CFE;
+			remoteInfo = "libcocos2d Mac";
+		};
 		FF9B40871EFE806B00807F88 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
@@ -101,6 +180,18 @@
 			remoteInfo = "libcocos2d tvOS";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF6EBE151F0078AF000F18A3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
@@ -160,6 +251,13 @@
 		ED545A7B1B68A1F400C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		ED545A7D1B68A1FA00C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		FF6EBDA31EFE8BDB000F18A3 /* publish */ = {isa = PBXFileReference; lastKnownFileType = folder; name = publish; path = ../publish; sourceTree = "<group>"; };
+		FF6EBDF81F007885000F18A3 /* gtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gtest.xcodeproj; path = ../googletest/googletest/xcode/gtest.xcodeproj; sourceTree = "<group>"; };
+		FF6EBE171F0078AF000F18A3 /* DiabetTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DiabetTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF6EBE191F0078AF000F18A3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FF6EBE1E1F0079DC000F18A3 /* SimpleTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleTest.cpp; sourceTree = "<group>"; };
+		FF6EBE1F1F0079DC000F18A3 /* SimpleTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTest.h; sourceTree = "<group>"; };
+		FF6EBE261F007AAA000F18A3 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		FF6EBE291F007ABD000F18A3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +301,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FF6EBE141F0078AF000F18A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF6EBE331F007B08000F18A3 /* AudioToolbox.framework in Frameworks */,
+				FF6EBE321F007AFF000F18A3 /* AVFoundation.framework in Frameworks */,
+				FF6EBE311F007AF8000F18A3 /* OpenAL.framework in Frameworks */,
+				FF6EBE301F007AE9000F18A3 /* QuartzCore.framework in Frameworks */,
+				FF6EBE2F1F007AE4000F18A3 /* Foundation.framework in Frameworks */,
+				FF6EBE2E1F007ADB000F18A3 /* AppKit.framework in Frameworks */,
+				FF6EBE2D1F007AD6000F18A3 /* OpenGL.framework in Frameworks */,
+				FF6EBE2C1F007ACC000F18A3 /* IOKit.framework in Frameworks */,
+				FF6EBE2B1F007AC6000F18A3 /* Security.framework in Frameworks */,
+				FF6EBE2A1F007ABD000F18A3 /* libz.tbd in Frameworks */,
+				FF6EBE281F007AB1000F18A3 /* libcocos2d Mac.a in Frameworks */,
+				FF6EBE271F007AAA000F18A3 /* libiconv.tbd in Frameworks */,
+				FF6EBE231F007A5B000F18A3 /* libgtest.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -226,6 +344,7 @@
 			children = (
 				1D6058910D05DD3D006BFB54 /* Diabet-mobile.app */,
 				5087E76F17EB910900C73F5D /* Diabet-desktop.app */,
+				FF6EBE171F0078AF000F18A3 /* DiabetTest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -243,9 +362,11 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				FF6EBDF81F007885000F18A3 /* gtest.xcodeproj */,
 				46880B8319C43A87006E1F66 /* Classes */,
 				46880B7519C43A67006E1F66 /* Resources */,
 				1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */,
+				FF6EBE181F0078AF000F18A3 /* DiabetTest */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				080E96DDFE201D6D7F000001 /* ios */,
 				503AE10617EB990700D1A890 /* mac */,
@@ -257,6 +378,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FF6EBE291F007ABD000F18A3 /* libz.tbd */,
+				FF6EBE261F007AAA000F18A3 /* libiconv.tbd */,
 				294D0D631D0D56D500F7F5D4 /* CoreText.framework */,
 				ED545A7D1B68A1FA00C3958E /* libiconv.dylib */,
 				ED545A7B1B68A1F400C3958E /* libiconv.dylib */,
@@ -349,6 +472,30 @@
 			path = ios;
 			sourceTree = SOURCE_ROOT;
 		};
+		FF6EBDF91F007885000F18A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF6EBE061F007885000F18A3 /* gtest.framework */,
+				FF6EBE081F007885000F18A3 /* libgtest.a */,
+				FF6EBE0A1F007885000F18A3 /* libgtest_main.a */,
+				FF6EBE0C1F007885000F18A3 /* gtest_unittest-framework */,
+				FF6EBE0E1F007885000F18A3 /* gtest_unittest */,
+				FF6EBE101F007885000F18A3 /* sample1_unittest-framework */,
+				FF6EBE121F007885000F18A3 /* sample1_unittest-static */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF6EBE181F0078AF000F18A3 /* DiabetTest */ = {
+			isa = PBXGroup;
+			children = (
+				FF6EBE191F0078AF000F18A3 /* main.cpp */,
+				FF6EBE1E1F0079DC000F18A3 /* SimpleTest.cpp */,
+				FF6EBE1F1F0079DC000F18A3 /* SimpleTest.h */,
+			);
+			path = DiabetTest;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -388,6 +535,25 @@
 			productReference = 5087E76F17EB910900C73F5D /* Diabet-desktop.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FF6EBE161F0078AF000F18A3 /* DiabetTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF6EBE1B1F0078AF000F18A3 /* Build configuration list for PBXNativeTarget "DiabetTest" */;
+			buildPhases = (
+				FF6EBE131F0078AF000F18A3 /* Sources */,
+				FF6EBE141F0078AF000F18A3 /* Frameworks */,
+				FF6EBE151F0078AF000F18A3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF6EBE251F007A7F000F18A3 /* PBXTargetDependency */,
+				FF6EBE221F007A4B000F18A3 /* PBXTargetDependency */,
+			);
+			name = DiabetTest;
+			productName = DiabetTest;
+			productReference = FF6EBE171F0078AF000F18A3 /* DiabetTest */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -395,6 +561,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					FF6EBE161F0078AF000F18A3 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7E544AA9DN;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Diabet" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -413,11 +586,16 @@
 					ProductGroup = 1AC6FAE6180E9839004C840B /* Products */;
 					ProjectRef = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
 				},
+				{
+					ProductGroup = FF6EBDF91F007885000F18A3 /* Products */;
+					ProjectRef = FF6EBDF81F007885000F18A3 /* gtest.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* Diabet-mobile */,
 				5087E73D17EB910900C73F5D /* Diabet-desktop */,
+				FF6EBE161F0078AF000F18A3 /* DiabetTest */,
 			);
 		};
 /* End PBXProject section */
@@ -435,6 +613,55 @@
 			fileType = archive.ar;
 			path = "libcocos2d iOS.a";
 			remoteRef = 1AC6FB06180E9839004C840B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF6EBE061F007885000F18A3 /* gtest.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = gtest.framework;
+			remoteRef = FF6EBE051F007885000F18A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF6EBE081F007885000F18A3 /* libgtest.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgtest.a;
+			remoteRef = FF6EBE071F007885000F18A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF6EBE0A1F007885000F18A3 /* libgtest_main.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgtest_main.a;
+			remoteRef = FF6EBE091F007885000F18A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF6EBE0C1F007885000F18A3 /* gtest_unittest-framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "gtest_unittest-framework";
+			remoteRef = FF6EBE0B1F007885000F18A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF6EBE0E1F007885000F18A3 /* gtest_unittest */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = gtest_unittest;
+			remoteRef = FF6EBE0D1F007885000F18A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF6EBE101F007885000F18A3 /* sample1_unittest-framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "sample1_unittest-framework";
+			remoteRef = FF6EBE0F1F007885000F18A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FF6EBE121F007885000F18A3 /* sample1_unittest-static */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = "sample1_unittest-static";
+			remoteRef = FF6EBE111F007885000F18A3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		FF9B40881EFE806B00807F88 /* libcocos2d tvOS.a */ = {
@@ -507,6 +734,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FF6EBE131F0078AF000F18A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF6EBE1A1F0078AF000F18A3 /* main.cpp in Sources */,
+				FF6EBE201F0079DC000F18A3 /* SimpleTest.cpp in Sources */,
+				FF6EBE341F007C02000F18A3 /* HelloWorldScene.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -519,6 +756,16 @@
 			isa = PBXTargetDependency;
 			name = "cocos2dx iOS";
 			targetProxy = 1AC6FB24180E99E1004C840B /* PBXContainerItemProxy */;
+		};
+		FF6EBE221F007A4B000F18A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "gtest-static";
+			targetProxy = FF6EBE211F007A4B000F18A3 /* PBXContainerItemProxy */;
+		};
+		FF6EBE251F007A7F000F18A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libcocos2d Mac";
+			targetProxy = FF6EBE241F007A7F000F18A3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -698,6 +945,110 @@
 			};
 			name = Release;
 		};
+		FF6EBE1C1F0078AF000F18A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7E544AA9DN;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../cocos2d",
+					"$(SRCROOT)/../cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../cocos2d/cocos",
+					"$(SRCROOT)/../cocos2d/extensions",
+					"$(SRCROOT)/../cocos2d/external",
+					"$(SRCROOT)/../cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../cocos2d/external/glfw3/include/mac",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../googletest/googletest/include $(SRCROOT)/../Classes";
+			};
+			name = Debug;
+		};
+		FF6EBE1D1F0078AF000F18A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7E544AA9DN;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../cocos2d",
+					"$(SRCROOT)/../cocos2d/cocos/audio/include",
+					"$(SRCROOT)/../cocos2d/cocos",
+					"$(SRCROOT)/../cocos2d/extensions",
+					"$(SRCROOT)/../cocos2d/external",
+					"$(SRCROOT)/../cocos2d/external/chipmunk/include/chipmunk",
+					"$(SRCROOT)/../cocos2d/external/glfw3/include/mac",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../googletest/googletest/include $(SRCROOT)/../Classes";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -727,6 +1078,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
+		};
+		FF6EBE1B1F0078AF000F18A3 /* Build configuration list for PBXNativeTarget "DiabetTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF6EBE1C1F0078AF000F18A3 /* Debug */,
+				FF6EBE1D1F0078AF000F18A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
