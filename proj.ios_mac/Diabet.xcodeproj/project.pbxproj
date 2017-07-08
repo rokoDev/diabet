@@ -1086,6 +1086,7 @@
 				FF6EBE1D1F0078AF000F18A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
