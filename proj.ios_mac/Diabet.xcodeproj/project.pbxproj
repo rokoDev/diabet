@@ -64,7 +64,6 @@
 		FF6EBDA51EFE8BDB000F18A3 /* publish in Resources */ = {isa = PBXBuildFile; fileRef = FF6EBDA31EFE8BDB000F18A3 /* publish */; };
 		FF6EBE1A1F0078AF000F18A3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF6EBE191F0078AF000F18A3 /* main.cpp */; };
 		FF6EBE201F0079DC000F18A3 /* SimpleTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF6EBE1E1F0079DC000F18A3 /* SimpleTest.cpp */; };
-		FF6EBE231F007A5B000F18A3 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6EBE081F007885000F18A3 /* libgtest.a */; };
 		FF6EBE271F007AAA000F18A3 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6EBE261F007AAA000F18A3 /* libiconv.tbd */; };
 		FF6EBE281F007AB1000F18A3 /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAF9180E9839004C840B /* libcocos2d Mac.a */; };
 		FF6EBE2A1F007ABD000F18A3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6EBE291F007ABD000F18A3 /* libz.tbd */; };
@@ -78,6 +77,7 @@
 		FF6EBE321F007AFF000F18A3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		FF6EBE331F007B08000F18A3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		FF6EBE341F007C02000F18A3 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */; };
+		FF773F751F16CEC400EED6E6 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF773F5A1F12D4F600EED6E6 /* libgtest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,68 +109,68 @@
 			remoteGlobalIDString = A07A4C241783777C0073F6A7;
 			remoteInfo = "cocos2dx iOS";
 		};
-		FF6EBE051F007885000F18A3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF6EBDF81F007885000F18A3 /* gtest.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4539C8FF0EC27F6400A70F4C;
-			remoteInfo = "gtest-framework";
-		};
-		FF6EBE071F007885000F18A3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF6EBDF81F007885000F18A3 /* gtest.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 40C848FA101A209C0083642A;
-			remoteInfo = "gtest-static";
-		};
-		FF6EBE091F007885000F18A3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF6EBDF81F007885000F18A3 /* gtest.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 40C8490B101A217E0083642A;
-			remoteInfo = "gtest_main-static";
-		};
-		FF6EBE0B1F007885000F18A3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF6EBDF81F007885000F18A3 /* gtest.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 40899F430FFA7184000B29AE;
-			remoteInfo = "gtest_unittest-framework";
-		};
-		FF6EBE0D1F007885000F18A3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF6EBDF81F007885000F18A3 /* gtest.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 40C84987101A36850083642A;
-			remoteInfo = "gtest_unittest-static";
-		};
-		FF6EBE0F1F007885000F18A3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF6EBDF81F007885000F18A3 /* gtest.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4089A0130FFACEFC000B29AE;
-			remoteInfo = "sample1_unittest-framework";
-		};
-		FF6EBE111F007885000F18A3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF6EBDF81F007885000F18A3 /* gtest.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 40C84997101A36A60083642A;
-			remoteInfo = "sample1_unittest-static";
-		};
-		FF6EBE211F007A4B000F18A3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF6EBDF81F007885000F18A3 /* gtest.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 40C848F9101A209C0083642A;
-			remoteInfo = "gtest-static";
-		};
 		FF6EBE241F007A7F000F18A3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 1551A33E158F2AB200E66CFE;
 			remoteInfo = "libcocos2d Mac";
+		};
+		FF773F571F12D4F600EED6E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF773F4B1F12D4F500EED6E6 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4539C8FF0EC27F6400A70F4C;
+			remoteInfo = "gtest-framework";
+		};
+		FF773F591F12D4F600EED6E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF773F4B1F12D4F500EED6E6 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C848FA101A209C0083642A;
+			remoteInfo = "gtest-static";
+		};
+		FF773F5B1F12D4F600EED6E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF773F4B1F12D4F500EED6E6 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C8490B101A217E0083642A;
+			remoteInfo = "gtest_main-static";
+		};
+		FF773F5D1F12D4F600EED6E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF773F4B1F12D4F500EED6E6 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40899F430FFA7184000B29AE;
+			remoteInfo = "gtest_unittest-framework";
+		};
+		FF773F5F1F12D4F600EED6E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF773F4B1F12D4F500EED6E6 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C84987101A36850083642A;
+			remoteInfo = "gtest_unittest-static";
+		};
+		FF773F611F12D4F600EED6E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF773F4B1F12D4F500EED6E6 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4089A0130FFACEFC000B29AE;
+			remoteInfo = "sample1_unittest-framework";
+		};
+		FF773F631F12D4F600EED6E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF773F4B1F12D4F500EED6E6 /* gtest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 40C84997101A36A60083642A;
+			remoteInfo = "sample1_unittest-static";
+		};
+		FF773F731F16CEA900EED6E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF773F4B1F12D4F500EED6E6 /* gtest.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 40C848F9101A209C0083642A;
+			remoteInfo = "gtest-static";
 		};
 		FF9B40871EFE806B00807F88 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -251,13 +251,13 @@
 		ED545A7B1B68A1F400C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.4.sdk/usr/lib/libiconv.dylib; sourceTree = DEVELOPER_DIR; };
 		ED545A7D1B68A1FA00C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		FF6EBDA31EFE8BDB000F18A3 /* publish */ = {isa = PBXFileReference; lastKnownFileType = folder; name = publish; path = ../publish; sourceTree = "<group>"; };
-		FF6EBDF81F007885000F18A3 /* gtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gtest.xcodeproj; path = ../googletest/googletest/xcode/gtest.xcodeproj; sourceTree = "<group>"; };
 		FF6EBE171F0078AF000F18A3 /* DiabetTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DiabetTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF6EBE191F0078AF000F18A3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FF6EBE1E1F0079DC000F18A3 /* SimpleTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleTest.cpp; sourceTree = "<group>"; };
 		FF6EBE1F1F0079DC000F18A3 /* SimpleTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTest.h; sourceTree = "<group>"; };
 		FF6EBE261F007AAA000F18A3 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		FF6EBE291F007ABD000F18A3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		FF773F4B1F12D4F500EED6E6 /* gtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gtest.xcodeproj; path = ../unit_tests/googletest/googletest/xcode/gtest.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +305,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF773F751F16CEC400EED6E6 /* libgtest.a in Frameworks */,
 				FF6EBE331F007B08000F18A3 /* AudioToolbox.framework in Frameworks */,
 				FF6EBE321F007AFF000F18A3 /* AVFoundation.framework in Frameworks */,
 				FF6EBE311F007AF8000F18A3 /* OpenAL.framework in Frameworks */,
@@ -317,7 +318,6 @@
 				FF6EBE2A1F007ABD000F18A3 /* libz.tbd in Frameworks */,
 				FF6EBE281F007AB1000F18A3 /* libcocos2d Mac.a in Frameworks */,
 				FF6EBE271F007AAA000F18A3 /* libiconv.tbd in Frameworks */,
-				FF6EBE231F007A5B000F18A3 /* libgtest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +362,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				FF6EBDF81F007885000F18A3 /* gtest.xcodeproj */,
+				FF773F4B1F12D4F500EED6E6 /* gtest.xcodeproj */,
 				46880B8319C43A87006E1F66 /* Classes */,
 				46880B7519C43A67006E1F66 /* Resources */,
 				1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */,
@@ -472,20 +472,6 @@
 			path = ios;
 			sourceTree = SOURCE_ROOT;
 		};
-		FF6EBDF91F007885000F18A3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FF6EBE061F007885000F18A3 /* gtest.framework */,
-				FF6EBE081F007885000F18A3 /* libgtest.a */,
-				FF6EBE0A1F007885000F18A3 /* libgtest_main.a */,
-				FF6EBE0C1F007885000F18A3 /* gtest_unittest-framework */,
-				FF6EBE0E1F007885000F18A3 /* gtest_unittest */,
-				FF6EBE101F007885000F18A3 /* sample1_unittest-framework */,
-				FF6EBE121F007885000F18A3 /* sample1_unittest-static */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		FF6EBE181F0078AF000F18A3 /* DiabetTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -494,6 +480,20 @@
 				FF6EBE1F1F0079DC000F18A3 /* SimpleTest.h */,
 			);
 			path = DiabetTest;
+			sourceTree = "<group>";
+		};
+		FF773F4C1F12D4F500EED6E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF773F581F12D4F600EED6E6 /* gtest.framework */,
+				FF773F5A1F12D4F600EED6E6 /* libgtest.a */,
+				FF773F5C1F12D4F600EED6E6 /* libgtest_main.a */,
+				FF773F5E1F12D4F600EED6E6 /* gtest_unittest-framework */,
+				FF773F601F12D4F600EED6E6 /* gtest_unittest */,
+				FF773F621F12D4F600EED6E6 /* sample1_unittest-framework */,
+				FF773F641F12D4F600EED6E6 /* sample1_unittest-static */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -546,8 +546,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				FF773F741F16CEA900EED6E6 /* PBXTargetDependency */,
 				FF6EBE251F007A7F000F18A3 /* PBXTargetDependency */,
-				FF6EBE221F007A4B000F18A3 /* PBXTargetDependency */,
 			);
 			name = DiabetTest;
 			productName = DiabetTest;
@@ -587,8 +587,8 @@
 					ProjectRef = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
 				},
 				{
-					ProductGroup = FF6EBDF91F007885000F18A3 /* Products */;
-					ProjectRef = FF6EBDF81F007885000F18A3 /* gtest.xcodeproj */;
+					ProductGroup = FF773F4C1F12D4F500EED6E6 /* Products */;
+					ProjectRef = FF773F4B1F12D4F500EED6E6 /* gtest.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -615,53 +615,53 @@
 			remoteRef = 1AC6FB06180E9839004C840B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FF6EBE061F007885000F18A3 /* gtest.framework */ = {
+		FF773F581F12D4F600EED6E6 /* gtest.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = gtest.framework;
-			remoteRef = FF6EBE051F007885000F18A3 /* PBXContainerItemProxy */;
+			remoteRef = FF773F571F12D4F600EED6E6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FF6EBE081F007885000F18A3 /* libgtest.a */ = {
+		FF773F5A1F12D4F600EED6E6 /* libgtest.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libgtest.a;
-			remoteRef = FF6EBE071F007885000F18A3 /* PBXContainerItemProxy */;
+			remoteRef = FF773F591F12D4F600EED6E6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FF6EBE0A1F007885000F18A3 /* libgtest_main.a */ = {
+		FF773F5C1F12D4F600EED6E6 /* libgtest_main.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libgtest_main.a;
-			remoteRef = FF6EBE091F007885000F18A3 /* PBXContainerItemProxy */;
+			remoteRef = FF773F5B1F12D4F600EED6E6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FF6EBE0C1F007885000F18A3 /* gtest_unittest-framework */ = {
+		FF773F5E1F12D4F600EED6E6 /* gtest_unittest-framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = "gtest_unittest-framework";
-			remoteRef = FF6EBE0B1F007885000F18A3 /* PBXContainerItemProxy */;
+			remoteRef = FF773F5D1F12D4F600EED6E6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FF6EBE0E1F007885000F18A3 /* gtest_unittest */ = {
+		FF773F601F12D4F600EED6E6 /* gtest_unittest */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = gtest_unittest;
-			remoteRef = FF6EBE0D1F007885000F18A3 /* PBXContainerItemProxy */;
+			remoteRef = FF773F5F1F12D4F600EED6E6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FF6EBE101F007885000F18A3 /* sample1_unittest-framework */ = {
+		FF773F621F12D4F600EED6E6 /* sample1_unittest-framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = "sample1_unittest-framework";
-			remoteRef = FF6EBE0F1F007885000F18A3 /* PBXContainerItemProxy */;
+			remoteRef = FF773F611F12D4F600EED6E6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		FF6EBE121F007885000F18A3 /* sample1_unittest-static */ = {
+		FF773F641F12D4F600EED6E6 /* sample1_unittest-static */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = "sample1_unittest-static";
-			remoteRef = FF6EBE111F007885000F18A3 /* PBXContainerItemProxy */;
+			remoteRef = FF773F631F12D4F600EED6E6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		FF9B40881EFE806B00807F88 /* libcocos2d tvOS.a */ = {
@@ -757,15 +757,15 @@
 			name = "cocos2dx iOS";
 			targetProxy = 1AC6FB24180E99E1004C840B /* PBXContainerItemProxy */;
 		};
-		FF6EBE221F007A4B000F18A3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "gtest-static";
-			targetProxy = FF6EBE211F007A4B000F18A3 /* PBXContainerItemProxy */;
-		};
 		FF6EBE251F007A7F000F18A3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "libcocos2d Mac";
 			targetProxy = FF6EBE241F007A7F000F18A3 /* PBXContainerItemProxy */;
+		};
+		FF773F741F16CEA900EED6E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "gtest-static";
+			targetProxy = FF773F731F16CEA900EED6E6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -995,7 +995,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../googletest/googletest/include $(SRCROOT)/../Classes";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../unit_tests/googletest/googletest/include $(SRCROOT)/../Classes";
 			};
 			name = Debug;
 		};
@@ -1045,7 +1045,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../googletest/googletest/include $(SRCROOT)/../Classes";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../unit_tests/googletest/googletest/include $(SRCROOT)/../Classes";
 			};
 			name = Release;
 		};
