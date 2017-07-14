@@ -62,8 +62,6 @@
 		ED545A7E1B68A1FA00C3958E /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ED545A7D1B68A1FA00C3958E /* libiconv.dylib */; };
 		FF6EBDA41EFE8BDB000F18A3 /* publish in Resources */ = {isa = PBXBuildFile; fileRef = FF6EBDA31EFE8BDB000F18A3 /* publish */; };
 		FF6EBDA51EFE8BDB000F18A3 /* publish in Resources */ = {isa = PBXBuildFile; fileRef = FF6EBDA31EFE8BDB000F18A3 /* publish */; };
-		FF6EBE1A1F0078AF000F18A3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF6EBE191F0078AF000F18A3 /* main.cpp */; };
-		FF6EBE201F0079DC000F18A3 /* SimpleTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF6EBE1E1F0079DC000F18A3 /* SimpleTest.cpp */; };
 		FF6EBE271F007AAA000F18A3 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6EBE261F007AAA000F18A3 /* libiconv.tbd */; };
 		FF6EBE281F007AB1000F18A3 /* libcocos2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAF9180E9839004C840B /* libcocos2d Mac.a */; };
 		FF6EBE2A1F007ABD000F18A3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6EBE291F007ABD000F18A3 /* libz.tbd */; };
@@ -78,6 +76,8 @@
 		FF6EBE331F007B08000F18A3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		FF6EBE341F007C02000F18A3 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46880B8619C43A87006E1F66 /* HelloWorldScene.cpp */; };
 		FF773F751F16CEC400EED6E6 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF773F5A1F12D4F600EED6E6 /* libgtest.a */; };
+		FF7741891F195D1D00EED6E6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF7740ED1F195D1D00EED6E6 /* main.cpp */; };
+		FF77418A1F195D1D00EED6E6 /* SimpleTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF7740EE1F195D1D00EED6E6 /* SimpleTest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,13 +165,6 @@
 			remoteGlobalIDString = 40C84997101A36A60083642A;
 			remoteInfo = "sample1_unittest-static";
 		};
-		FF773F731F16CEA900EED6E6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF773F4B1F12D4F500EED6E6 /* gtest.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 40C848F9101A209C0083642A;
-			remoteInfo = "gtest-static";
-		};
 		FF9B40871EFE806B00807F88 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */;
@@ -252,12 +245,12 @@
 		ED545A7D1B68A1FA00C3958E /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		FF6EBDA31EFE8BDB000F18A3 /* publish */ = {isa = PBXFileReference; lastKnownFileType = folder; name = publish; path = ../publish; sourceTree = "<group>"; };
 		FF6EBE171F0078AF000F18A3 /* DiabetTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DiabetTest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF6EBE191F0078AF000F18A3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		FF6EBE1E1F0079DC000F18A3 /* SimpleTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleTest.cpp; sourceTree = "<group>"; };
-		FF6EBE1F1F0079DC000F18A3 /* SimpleTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTest.h; sourceTree = "<group>"; };
 		FF6EBE261F007AAA000F18A3 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		FF6EBE291F007ABD000F18A3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		FF773F4B1F12D4F500EED6E6 /* gtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = gtest.xcodeproj; path = ../unit_tests/googletest/googletest/xcode/gtest.xcodeproj; sourceTree = "<group>"; };
+		FF7740ED1F195D1D00EED6E6 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FF7740EE1F195D1D00EED6E6 /* SimpleTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleTest.cpp; sourceTree = "<group>"; };
+		FF7740EF1F195D1D00EED6E6 /* SimpleTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -364,9 +357,9 @@
 			children = (
 				FF773F4B1F12D4F500EED6E6 /* gtest.xcodeproj */,
 				46880B8319C43A87006E1F66 /* Classes */,
+				FF773F771F195D1D00EED6E6 /* unit_tests */,
 				46880B7519C43A67006E1F66 /* Resources */,
 				1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */,
-				FF6EBE181F0078AF000F18A3 /* DiabetTest */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				080E96DDFE201D6D7F000001 /* ios */,
 				503AE10617EB990700D1A890 /* mac */,
@@ -472,16 +465,6 @@
 			path = ios;
 			sourceTree = SOURCE_ROOT;
 		};
-		FF6EBE181F0078AF000F18A3 /* DiabetTest */ = {
-			isa = PBXGroup;
-			children = (
-				FF6EBE191F0078AF000F18A3 /* main.cpp */,
-				FF6EBE1E1F0079DC000F18A3 /* SimpleTest.cpp */,
-				FF6EBE1F1F0079DC000F18A3 /* SimpleTest.h */,
-			);
-			path = DiabetTest;
-			sourceTree = "<group>";
-		};
 		FF773F4C1F12D4F500EED6E6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -494,6 +477,17 @@
 				FF773F641F12D4F600EED6E6 /* sample1_unittest-static */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		FF773F771F195D1D00EED6E6 /* unit_tests */ = {
+			isa = PBXGroup;
+			children = (
+				FF7740ED1F195D1D00EED6E6 /* main.cpp */,
+				FF7740EE1F195D1D00EED6E6 /* SimpleTest.cpp */,
+				FF7740EF1F195D1D00EED6E6 /* SimpleTest.h */,
+			);
+			name = unit_tests;
+			path = ../unit_tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -546,7 +540,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				FF773F741F16CEA900EED6E6 /* PBXTargetDependency */,
 				FF6EBE251F007A7F000F18A3 /* PBXTargetDependency */,
 			);
 			name = DiabetTest;
@@ -738,9 +731,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF6EBE1A1F0078AF000F18A3 /* main.cpp in Sources */,
-				FF6EBE201F0079DC000F18A3 /* SimpleTest.cpp in Sources */,
 				FF6EBE341F007C02000F18A3 /* HelloWorldScene.cpp in Sources */,
+				FF77418A1F195D1D00EED6E6 /* SimpleTest.cpp in Sources */,
+				FF7741891F195D1D00EED6E6 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,11 +754,6 @@
 			isa = PBXTargetDependency;
 			name = "libcocos2d Mac";
 			targetProxy = FF6EBE241F007A7F000F18A3 /* PBXContainerItemProxy */;
-		};
-		FF773F741F16CEA900EED6E6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "gtest-static";
-			targetProxy = FF773F731F16CEA900EED6E6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
