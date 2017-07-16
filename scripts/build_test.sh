@@ -8,5 +8,5 @@ cd build
 cmake -G "Xcode" -DCMAKE_BUILD_TYPE=Debug ..
 cmake --build . --config Debug
 
-cd tests
+cd unit_tests
 ctest -VV --output-on-failure -C Debug
