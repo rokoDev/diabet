@@ -276,3 +276,9 @@ lib/
 # others
 
 publish/
+
+installed/
+
+deps/
+
+docs/
