@@ -181,3 +181,4 @@ endif()
 
 enable_testing() #must be in root(top) CMakeLists.txt to avoid "No tests were found" message on Appveyor ci
 add_subdirectory(unit_tests)
+add_subdirectory(doc)
