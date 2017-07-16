@@ -14,8 +14,7 @@ if(BUILD_DOCUMENTATION)
     set(BRIEF_DESCRIPTION "This is a library to transmit data over the internet.")
     set(OUTPUT_DIR ${CMAKE_CURRENT_BINARY_DIR}/doc)
     set(INPUT_DIRS "\
-                    \"${PROJECT_SOURCE_DIR}/include\" \\ \
-                    \"${PROJECT_SOURCE_DIR}/src\" \
+                    \"${PROJECT_SOURCE_DIR}/Classes\" \
                     ")
     message(STATUS "OUTPUT_DIR:${OUTPUT_DIR}")
     message(STATUS "INPUT_DIRS:${INPUT_DIRS}")
