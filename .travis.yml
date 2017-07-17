@@ -56,15 +56,17 @@ git:
   
 # use sed to replace the SSH URL with the public URL, then init and update submodules
 before_install:
-  - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+  #- sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
   - git submodule update --init --recursive
 
 install: 
-  - ./scripts/install_cmake.sh
+  #- ./scripts/install_cmake.sh
   - ./scripts/build_resources.sh
 
 script: 
-  - ./scripts/build_test.sh
+  #- export CMAKE_OPTIONS=${CMAKE_OPTIONS}" -D CMAKE_CXX_COMPILER=${COMPILER}"
+  #- ./scripts/build_test.sh
+  - ./scripts/build_xcode.sh
   
 # Generate and deploy documentation
 after_success:
