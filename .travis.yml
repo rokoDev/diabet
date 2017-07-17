@@ -55,15 +55,15 @@ git:
   submodules: false
   
 # use sed to replace the SSH URL with the public URL, then init and update submodules
-before_install:
+#before_install:
   #- sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
   #- git submodule update --init --recursive
 
-install: 
+#install: 
   #- ./scripts/install_cmake.sh
-  - ./scripts/build_resources.sh
+  #- ./scripts/build_resources.sh
 
-script: 
+#script: 
   #- export CMAKE_OPTIONS=${CMAKE_OPTIONS}" -D CMAKE_CXX_COMPILER=${COMPILER}"
   #- ./scripts/build_test.sh
   - ./scripts/prepare_for_mac.sh

@@ -8,6 +8,10 @@ cd ..
 git submodule init
 git submodule update
 
+rm -rf publish
+
+cmake -E make_directory publish
+
 cd proj.ios_mac
 #list all targets, build configurations, and schemes used in project
 xcodebuild -list -project Diabet.xcodeproj
