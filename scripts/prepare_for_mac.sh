@@ -4,7 +4,7 @@ git submodule init
 git submodule update
 
 cd cocos2d
-should_save_deps="yes" #wether to save 'v3-deps-109e.zip' file
+#should_save_deps="yes" #wether to save 'v3-deps-109e.zip' file
 echo | python ./download-deps.py
 
 cd ..
