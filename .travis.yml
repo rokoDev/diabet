@@ -21,25 +21,25 @@ branches:
     
 matrix:
   include:
-    - os: linux
-      compiler: gcc
-      before_install:
-        - sudo apt-get install python-software-properties 
-        - sudo apt-add-repository -y ppa:libreoffice/libreoffice-4-2
-        - sudo apt-get update
-        - sudo apt-get install doxygen
-        - sudo apt-get install graphviz
-      addons:
-        apt:
-          sources:
-            - ubuntu-toolchain-r-test
-          packages:
-            - g++-5
-      env: 
-        - COMPILER=g++-5
-        - GH_REPO_NAME: Diabet
-        - DOXYFILE: $TRAVIS_BUILD_DIR/doc/Doxyfile
-        - GH_REPO_REF: github.com/rokoDev/diabet.git
+#    - os: linux
+#      compiler: gcc
+#      before_install:
+#        - sudo apt-get install python-software-properties 
+#        - sudo apt-add-repository -y ppa:libreoffice/libreoffice-4-2
+#        - sudo apt-get update
+#        - sudo apt-get install doxygen
+#        - sudo apt-get install graphviz
+#      addons:
+#        apt:
+#          sources:
+#            - ubuntu-toolchain-r-test
+#          packages:
+#            - g++-5
+#      env: 
+#        - COMPILER=g++-5
+#        - GH_REPO_NAME: Diabet
+#        - DOXYFILE: $TRAVIS_BUILD_DIR/doc/Doxyfile
+#        - GH_REPO_REF: github.com/rokoDev/diabet.git
     - os: osx
       compiler: clang
       addons:
@@ -49,21 +49,25 @@ matrix:
             - graphviz
       env:
         - COMPILER=clang++
+        
+      osx_image: xcode8.3
   
 # disable the default submodule logic
 git:
   submodules: false
   
 # use sed to replace the SSH URL with the public URL, then init and update submodules
-#before_install:
-  #- sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
-  #- git submodule update --init --recursive
+before_install:
+#  - sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
+#  - git submodule update --init --recursive
+  - brew update
+  - brew outdated xctool || brew upgrade xctool
 
 #install: 
   #- ./scripts/install_cmake.sh
   #- ./scripts/build_resources.sh
 
-#script: 
+script: 
   #- export CMAKE_OPTIONS=${CMAKE_OPTIONS}" -D CMAKE_CXX_COMPILER=${COMPILER}"
   #- ./scripts/build_test.sh
   - ./scripts/prepare_for_mac.sh

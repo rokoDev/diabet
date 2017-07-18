@@ -282,3 +282,5 @@ installed/
 deps/
 
 docs/
+
+proj.ios_mac/build/
