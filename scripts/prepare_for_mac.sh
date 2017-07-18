@@ -13,16 +13,16 @@ cd ..
 #
 #cmake -E make_directory publish
 
-cd proj.ios_mac
+#cd proj.ios_mac
 #list all targets, build configurations, and schemes used in project
-xcodebuild -list -project Diabet.xcodeproj
+xcodebuild -list -project ./proj.ios_mac/Diabet.xcodeproj
 
 rm -rf build
 cmake -E make_directory build
 
 echo "Building test target for Mac OS: DiabetTest ..."
-
-xcodebuild -project proj.ios_mac/Diabet.xcodeproj -target DiabetTest -configuration Debug CONFIGURATION_BUILD_DIR="../build"
+echo $pwd
+xcodebuild -project ./proj.ios_mac/Diabet.xcodeproj -target DiabetTest -configuration Debug CONFIGURATION_BUILD_DIR="../build"
 
 ./build/DiabetTest
 
