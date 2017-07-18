@@ -19,7 +19,6 @@ xcodebuild -list -project Diabet.xcodeproj
 
 rm -rf build
 cmake -E make_directory build
-cd build
 
 echo "Building test target for Mac OS: DiabetTest ..."
 
