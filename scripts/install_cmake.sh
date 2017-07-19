@@ -1,5 +1,6 @@
 #! /bin/bash
 
+echo "instatlling cmake..."
 cmake_version_id="3.6"
 cmake_version="3.6.1"
 if [ $TRAVIS_OS_NAME = osx ]
