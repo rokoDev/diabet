@@ -63,7 +63,8 @@ before_install:
   - brew update
   - brew outdated xctool || brew upgrade xctool
 
-install: travis_wait 20 mvn install
+install:
+  - travis_wait mvn install
   - ./scripts/install_cmake.sh
   #- ./scripts/build_resources.sh
   - ./scripts/prepare_for_mac.sh
