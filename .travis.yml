@@ -64,10 +64,10 @@ before_install:
   - brew outdated xctool || brew upgrade xctool
 
 install:
-  - travis_wait mvn install
+  #- travis_wait mvn install
   - ./scripts/install_cmake.sh
   #- ./scripts/build_resources.sh
-  - ./scripts/prepare_for_mac.sh
+  - travis_wait ./scripts/prepare_for_mac.sh
 
 script: 
   #- export CMAKE_OPTIONS=${CMAKE_OPTIONS}" -D CMAKE_CXX_COMPILER=${COMPILER}"
