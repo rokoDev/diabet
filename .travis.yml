@@ -72,6 +72,7 @@ install:
 script: 
   #- export CMAKE_OPTIONS=${CMAKE_OPTIONS}" -D CMAKE_CXX_COMPILER=${COMPILER}"
   #- ./scripts/build_test.sh
+  - ./scripts/build_resources.sh
   - ./scripts/build_and_run_tests.sh
   
 # Generate and deploy documentation

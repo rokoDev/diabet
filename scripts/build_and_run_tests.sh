@@ -8,9 +8,10 @@ cmake -E make_directory build
 
 echo "Building test target for Mac OS: DiabetTest ..."
 echo $pwd
-xcodebuild -project ./proj.ios_mac/Diabet.xcodeproj -target DiabetTest -configuration Debug CONFIGURATION_BUILD_DIR="../build"
+#xcodebuild -project ./proj.ios_mac/Diabet.xcodeproj -target DiabetTest -configuration Debug CONFIGURATION_BUILD_DIR="../build"
+xcodebuild -project ./proj.ios_mac/Diabet.xcodeproj -target Diabet-desktop -configuration Debug CONFIGURATION_BUILD_DIR="../build"
 
-./build/DiabetTest
+#./build/Diabet-desktop
 
 #rm -rf build
 #
