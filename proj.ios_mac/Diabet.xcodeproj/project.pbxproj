@@ -1112,7 +1112,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"start building tests...\"\nxcodebuild -project ./Diabet.xcodeproj -target DiabetTest -configuration Debug CONFIGURATION_BUILD_DIR=\"../build\"\necho \"finish building tests\"\necho \"run tests..\"\n../build/DiabetTest\necho \"tests completed\"";
+			shellScript = "echo \"start building tests...\"\nxcodebuild -project ./Diabet.xcodeproj -target DiabetTest -configuration Debug CONFIGURATION_BUILD_DIR=\"../build\"\n\nlocal build_status = $?\necho \"build_status >> $build_status\"\n\nlocal status=$?\nif [ $build_status -ne 0 ]; then\necho \"error with $1\" >&2\nreturn $build_status\nfi\necho \"test build succeeded\"\n\necho \"running tests...\"\n../build/DiabetTest\nlocal run_tests_status = $?\necho \"run_tests_status >> $run_tests_status\"\nreturn $run_tests_status";
 		};
 /* End PBXShellScriptBuildPhase section */
 
