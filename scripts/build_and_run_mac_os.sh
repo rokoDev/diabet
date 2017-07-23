@@ -1,13 +1,6 @@
 #! /bin/bash
 
-echo "building and running tests..."
-xcodebuild -list -project ./proj.ios_mac/Diabet.xcodeproj
-
-rm -rf build
-cmake -E make_directory build
-
-echo "Building test target for Mac OS: DiabetTest ..."
-echo $pwd
+echo "Building <Diabet-desktop> target for Mac OS..."
 #xcodebuild -project ./proj.ios_mac/Diabet.xcodeproj -target DiabetTest -configuration Debug CONFIGURATION_BUILD_DIR="../build"
 xcodebuild -project ./proj.ios_mac/Diabet.xcodeproj -target Diabet-desktop -configuration Debug CONFIGURATION_BUILD_DIR="../build"
 

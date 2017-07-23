@@ -68,12 +68,13 @@ install:
   - ./scripts/install_cmake.sh
   #- ./scripts/build_resources.sh
   - travis_wait ./scripts/prepare_for_mac.sh
+  - ./scripts/build_resources.sh
 
 script: 
   #- export CMAKE_OPTIONS=${CMAKE_OPTIONS}" -D CMAKE_CXX_COMPILER=${COMPILER}"
   #- ./scripts/build_test.sh
-  - ./scripts/build_resources.sh
-  - ./scripts/build_and_run_tests.sh
+  - ./scripts/build_and_run_tests_mac_os.sh
+  - ./scripts/build_and_run_mac_os.sh
   
 # Generate and deploy documentation
 after_success:

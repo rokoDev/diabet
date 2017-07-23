@@ -826,7 +826,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5087E76C17EB910900C73F5D /* Build configuration list for PBXNativeTarget "Diabet-desktop" */;
 			buildPhases = (
-				FF9B56021F2173280039F42F /* ShellScript */,
 				5087E74817EB910900C73F5D /* Resources */,
 				5087E75617EB910900C73F5D /* Sources */,
 				5087E75C17EB910900C73F5D /* Frameworks */,
@@ -1099,22 +1098,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		FF9B56021F2173280039F42F /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "echo \"start building tests...\"\nxcodebuild -project ./Diabet.xcodeproj -target DiabetTest -configuration Debug CONFIGURATION_BUILD_DIR=\"../build\"\n\nlocal build_status = $?\necho \"build_status >> $build_status\"\n\nlocal status=$?\nif [ $build_status -ne 0 ]; then\necho \"error with $1\" >&2\nreturn $build_status\nfi\necho \"test build succeeded\"\n\necho \"running tests...\"\n../build/DiabetTest\nlocal run_tests_status = $?\necho \"run_tests_status >> $run_tests_status\"\nreturn $run_tests_status";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D60588E0D05DD3D006BFB54 /* Sources */ = {

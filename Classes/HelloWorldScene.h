@@ -13,7 +13,7 @@ public:
     // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);
     
-    bool falseMethod() const { return true; }
+    bool falseMethod() const { return false; }
     bool trueMethod() const { return true; }
 };
 
