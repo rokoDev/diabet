@@ -2,7 +2,7 @@
 
 echo "Building <Diabet-desktop> target for Mac OS..."
 #xcodebuild -project ./proj.ios_mac/Diabet.xcodeproj -target DiabetTest -configuration Debug CONFIGURATION_BUILD_DIR="../build"
-xcodebuild -project ./proj.ios_mac/Diabet.xcodeproj -target Diabet-desktop -configuration Debug
+xcodebuild -project ./proj.ios_mac/Diabet.xcodeproj -target Diabet-desktop -configuration Debug -quiet
 
 #./build/Diabet-desktop
 

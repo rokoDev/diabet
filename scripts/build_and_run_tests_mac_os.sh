@@ -1,7 +1,7 @@
 #! /bin/bash
 
 echo "start building tests..."
-xcodebuild -project ./proj.ios_mac/Diabet.xcodeproj -target DiabetTest -configuration Debug
+xcodebuild -project ./proj.ios_mac/Diabet.xcodeproj -target DiabetTest -configuration Debug -quiet
 
 #local build_status = $?
 #echo "build_status >> $build_status"
